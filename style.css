@@ -1,0 +1,322 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+}
+body,html{
+    height:100%;
+    width:100%;
+    background: rgb(27, 27, 27);
+}
+#main{
+    background: rgb(27, 27, 27);
+    height:100vh;
+    width:100%;
+}
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+    border-radius: 20px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+.more{
+    color: grey;
+}
+.shine{
+    z-index: 0;
+    position: absolute;
+    top: -15%;
+    left: -5%;
+    height: 200px;
+    width: 200px;
+    filter: blur(100px);
+    background: rgb(0, 255, 195);
+    opacity: 0.5;
+    animation: ghumo 2s alternate-reverse ease-in infinite;
+}
+@keyframes ghumo {
+0%{
+    transform: translateX(10px);
+}
+25%{
+    transform: translateY(10px);
+}
+50%{
+    transform: translateY(-10px);
+}
+100%{
+    transform: translate(0px);
+}
+    
+}
+nav h1 span{
+    color: rgb(0, 255, 195);
+    font-weight: 400;
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 155px;
+    position: sticky;
+    backdrop-filter: blur(5px);
+    top: 5%;
+    padding: 10px;
+    background: rgba(116, 116, 116, 0.124);
+    border: 1px solid rgba(76, 76, 76, 0.549);
+    border-radius: 15px;
+    z-index: 3;
+}
+nav button a{
+    color: black;
+    text-decoration: none;
+
+}
+nav button:hover{
+    background-color: rgb(2, 162, 141);
+}
+nav button{
+    background-color: rgb(0, 255, 195);
+    border: none;
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-weight: 800;
+}
+nav h1{
+    color: white;
+
+    font-weight: 700;
+}
+#box{
+    height:60vh;
+    width:90vw;
+    background-color: rgb(45, 45, 45);
+    border-radius: 10px;
+    margin-top: 40px;
+    z-index: 1;
+}
+.input_box{
+    display:flex;
+    justify-content: center;
+    padding:30px;
+    gap:15px;
+    position: sticky;
+    top: 13%;
+    z-index: 2;
+}
+.input_box input:focus{
+    outline: none;
+
+    border: 2px solid rgb(0, 255, 195);
+}
+.input_box input{
+    padding:5px;
+    font-size: 25px;
+    width: 550px;
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.132);
+    border: 1px solid rgb(0, 255, 195);
+    border-radius: 5px;
+    color: white;
+    background: transparent;
+    
+}
+.input_box input::placeholder{
+    color: rgb(74, 74, 74);
+    font-size: 20px;
+}
+.page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.page nav{
+    width: 75%;
+
+}
+.input_box button a{
+    text-decoration: none;
+}
+iframe{
+    margin-top: 50px;
+    filter: saturate(5);
+}
+.input_box button{
+    font-size: 20px;
+    padding:5px 10px;
+    
+    color: white;
+    border-radius: 5px;
+    border:none;
+    background-color: rgb(68, 68, 68);
+    
+}
+.mapBtn a{
+    text-decoration: none;
+    color: black;
+}
+.input_box button:hover{
+    background: rgb(129, 129, 129);
+    color: rgb(57, 57, 57);
+    cursor: pointer;
+}
+img{
+    height:200px;
+    width: 300px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+.country-dets{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background: red; */
+    gap: 40px;
+    height: 100%;
+}
+.country-dets .right p{
+    font-size: 25px;
+    line-height: 40px;
+}
+.country-dets .left h1{
+    text-align: center;
+    color: white;
+    font-weight: 800;
+
+}
+.country-dets .left button{
+    background-color: rgb(0, 255, 195);
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.country-dets .right a{
+    margin-top: 5px;
+}
+.country-dets .right table {
+    border: 1px solid rgb(255, 255, 255);
+    border-collapse: collapse;
+}
+img.coatOfArms{
+    object-fit: contain;
+}
+.country-dets .right table tr td{
+    font-size: 20px;
+    padding: 10px;
+    color: white;
+    text-align: center;
+}
+.country-dets .right b{
+    font-size: 25px;
+    font-weight: 900;
+    color: rgb(0, 255, 195);
+
+}
+.country-dets .right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.ctarms{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.ctarms h3{
+    text-align: center;
+    color: white;
+}
+.country-dets .left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    /* justify-content: center; */
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (max-width: 768px) {
+    nav {
+        margin: 0 10px;
+    }
+    .input_box{
+        /* width: 0%; */
+        width: fit-content;
+    }
+    .input_box input{
+        width: 100%;
+        font-size: 20px;
+    }
+    .input_box button{
+        font-size: 15px;
+    }
+    #box{
+        height: fit-content;
+        margin-bottom: 30px;
+    }
+    .input_box input::placeholder{
+        color: rgb(74, 74, 74);
+        font-size: 15px;
+    }
+    .country-dets{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .country-dets .left h1{
+        font-size: 22px;
+    }
+    .country-dets .left{
+        display: flex;
+        padding: 20px;
+        flex-direction: row;
+        justify-content: center;
+    }
+   .country-dets .right table{
+    width: 40%;
+   }
+   .country-dets .right table td{
+        padding: 2px;
+        font-size: 15px;
+    }
+    .country-dets .right b{
+        font-size: 20px;
+    }
+    .container{
+        max-height: fit-content;
+    }
+    .country-dets .ctarms{
+        padding-bottom: 10px;
+    }
+    .country-dets .ctarms img{
+        height: 100px;
+    }
+    .country-dets .left img{
+        height: 100px;
+        width: 150px;
+        object-fit: cover;
+    }
+    
+}
