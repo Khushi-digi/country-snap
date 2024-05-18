@@ -1,2 +1,2 @@
 # country-snap
-## live : https://khushi-digi.github.io/country-snap/ 
+## live : https://kkhushie.github.io/country-snap/ 
